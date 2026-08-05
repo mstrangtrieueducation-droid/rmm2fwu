@@ -94,7 +94,7 @@
     const lesson = lessons[lessonIndex];
     $("#lessonNumber").textContent = String(lessonIndex + 1);
     $("#lessonProgress").style.width = `${((lessonIndex + 1) / lessons.length) * 100}%`;
-    $("#lessonVisual").src = `assets/images/${lesson.image}.webp?v=20260805-u2`;
+    $("#lessonVisual").src = `assets/images/${lesson.image}.webp?v=20260805-waveform-hires`;
     $("#lessonVisual").alt = lesson.label;
     $("#visualLabel").textContent = lesson.label;
     $("#lessonTag").textContent = lesson.tag;
@@ -112,7 +112,7 @@
       wrapper.setAttribute("role", "img");
       wrapper.setAttribute("aria-label", "Hình từ vựng");
       const image = document.createElement("img");
-      image.src = `assets/images/${cue.image}.webp?v=20260805-u2`;
+      image.src = `assets/images/${cue.image}.webp?v=20260805-waveform-hires`;
       image.alt = "";
       wrapper.append(image);
       return wrapper;
@@ -141,7 +141,7 @@
     const prompt = prompts[practiceIndex];
     $("#practiceNumber").textContent = String(practiceIndex + 1);
     $("#practiceProgress").style.width = `${((practiceIndex + 1) / prompts.length) * 100}%`;
-    $("#practiceVisual").src = `assets/images/${prompt.image}.webp?v=20260805-u2`;
+    $("#practiceVisual").src = `assets/images/${prompt.image}.webp?v=20260805-waveform-hires`;
     $("#practiceVisual").alt = "Hình gợi ý cho câu nói";
     $("#promptType").textContent = prompt.type;
     $("#promptInstruction").textContent = prompt.instruction;
